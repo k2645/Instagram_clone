@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		4A4CF88727DF1C4000C7BC2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CF88627DF1C4000C7BC2D /* AppDelegate.swift */; };
 		4A4CF88927DF1C4000C7BC2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CF88827DF1C4000C7BC2D /* SceneDelegate.swift */; };
-		4A4CF88B27DF1C4000C7BC2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CF88A27DF1C4000C7BC2D /* ViewController.swift */; };
 		4A4CF88E27DF1C4000C7BC2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4CF88C27DF1C4000C7BC2D /* Main.storyboard */; };
 		4A4CF89027DF1C4100C7BC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4CF88F27DF1C4100C7BC2D /* Assets.xcassets */; };
 		4A4CF89327DF1C4100C7BC2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4CF89127DF1C4100C7BC2D /* LaunchScreen.storyboard */; };
-		4A4CF89E27DF1C4100C7BC2D /* CatstagramCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CF89D27DF1C4100C7BC2D /* CatstagramCloneTests.swift */; };
-		4A4CF8A827DF1C4100C7BC2D /* CatstagramCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CF8A727DF1C4100C7BC2D /* CatstagramCloneUITests.swift */; };
-		4A4CF8AA27DF1C4100C7BC2D /* CatstagramCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CF8A927DF1C4100C7BC2D /* CatstagramCloneUITestsLaunchTests.swift */; };
+		4A59085727F1BC1E0092A53B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59085627F1BC1E0092A53B /* Color+Extension.swift */; };
+		4ACA292E27F1CF9E0027981D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA292D27F1CF9E0027981D /* LoginViewController.swift */; };
+		4ACA293027F265FD0027981D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA292F27F265FD0027981D /* RegisterViewController.swift */; };
+		4ACA293227F287DB0027981D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA293127F287DB0027981D /* UIView+Extension.swift */; };
+		4ACA293427F289990027981D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA293327F289990027981D /* UIViewController+Extension.swift */; };
+		4ACA293627F2941D0027981D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA293527F2941D0027981D /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +41,18 @@
 		4A4CF88327DF1C4000C7BC2D /* CatstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4CF88627DF1C4000C7BC2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A4CF88827DF1C4000C7BC2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4A4CF88A27DF1C4000C7BC2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A4CF88D27DF1C4000C7BC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A4CF88F27DF1C4100C7BC2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A4CF89227DF1C4100C7BC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A4CF89427DF1C4100C7BC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A4CF89927DF1C4100C7BC2D /* CatstagramCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatstagramCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A4CF89D27DF1C4100C7BC2D /* CatstagramCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatstagramCloneTests.swift; sourceTree = "<group>"; };
 		4A4CF8A327DF1C4100C7BC2D /* CatstagramCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatstagramCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A4CF8A727DF1C4100C7BC2D /* CatstagramCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatstagramCloneUITests.swift; sourceTree = "<group>"; };
-		4A4CF8A927DF1C4100C7BC2D /* CatstagramCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatstagramCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A59085627F1BC1E0092A53B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		4ACA292D27F1CF9E0027981D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4ACA292F27F265FD0027981D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4ACA293127F287DB0027981D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4ACA293327F289990027981D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4ACA293527F2941D0027981D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				4A4CF88527DF1C4000C7BC2D /* CatstagramClone */,
-				4A4CF89C27DF1C4100C7BC2D /* CatstagramCloneTests */,
-				4A4CF8A627DF1C4100C7BC2D /* CatstagramCloneUITests */,
 				4A4CF88427DF1C4000C7BC2D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,30 +103,18 @@
 			children = (
 				4A4CF88627DF1C4000C7BC2D /* AppDelegate.swift */,
 				4A4CF88827DF1C4000C7BC2D /* SceneDelegate.swift */,
-				4A4CF88A27DF1C4000C7BC2D /* ViewController.swift */,
 				4A4CF88C27DF1C4000C7BC2D /* Main.storyboard */,
+				4ACA292F27F265FD0027981D /* RegisterViewController.swift */,
+				4ACA293527F2941D0027981D /* UserInfo.swift */,
+				4ACA293327F289990027981D /* UIViewController+Extension.swift */,
 				4A4CF88F27DF1C4100C7BC2D /* Assets.xcassets */,
 				4A4CF89127DF1C4100C7BC2D /* LaunchScreen.storyboard */,
 				4A4CF89427DF1C4100C7BC2D /* Info.plist */,
+				4A59085627F1BC1E0092A53B /* Color+Extension.swift */,
+				4ACA292D27F1CF9E0027981D /* LoginViewController.swift */,
+				4ACA293127F287DB0027981D /* UIView+Extension.swift */,
 			);
 			path = CatstagramClone;
-			sourceTree = "<group>";
-		};
-		4A4CF89C27DF1C4100C7BC2D /* CatstagramCloneTests */ = {
-			isa = PBXGroup;
-			children = (
-				4A4CF89D27DF1C4100C7BC2D /* CatstagramCloneTests.swift */,
-			);
-			path = CatstagramCloneTests;
-			sourceTree = "<group>";
-		};
-		4A4CF8A627DF1C4100C7BC2D /* CatstagramCloneUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4A4CF8A727DF1C4100C7BC2D /* CatstagramCloneUITests.swift */,
-				4A4CF8A927DF1C4100C7BC2D /* CatstagramCloneUITestsLaunchTests.swift */,
-			);
-			path = CatstagramCloneUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A4CF88B27DF1C4000C7BC2D /* ViewController.swift in Sources */,
+				4ACA293227F287DB0027981D /* UIView+Extension.swift in Sources */,
+				4ACA292E27F1CF9E0027981D /* LoginViewController.swift in Sources */,
+				4ACA293027F265FD0027981D /* RegisterViewController.swift in Sources */,
+				4A59085727F1BC1E0092A53B /* Color+Extension.swift in Sources */,
+				4ACA293627F2941D0027981D /* UserInfo.swift in Sources */,
+				4ACA293427F289990027981D /* UIViewController+Extension.swift in Sources */,
 				4A4CF88727DF1C4000C7BC2D /* AppDelegate.swift in Sources */,
 				4A4CF88927DF1C4000C7BC2D /* SceneDelegate.swift in Sources */,
 			);
@@ -268,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A4CF89E27DF1C4100C7BC2D /* CatstagramCloneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A4CF8A827DF1C4100C7BC2D /* CatstagramCloneUITests.swift in Sources */,
-				4A4CF8AA27DF1C4100C7BC2D /* CatstagramCloneUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
