@@ -333,29 +333,14 @@
                     <view key="view" contentMode="scaleToFill" id="qJS-k5-oIJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAU-Bi-IWW">
-                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ymd-na-hgQ"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Title" id="Utv-Nl-2Fm"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Myg-jc-Zp0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="aAU-Bi-IWW" firstAttribute="width" secondItem="qJS-k5-oIJ" secondAttribute="width" id="NVr-Ij-gWs"/>
-                            <constraint firstItem="aAU-Bi-IWW" firstAttribute="top" secondItem="Myg-jc-Zp0" secondAttribute="top" id="R5V-zh-mxa"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="DK5-Nc-vm4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCd-1b-GTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1583" y="1527"/>
+            <point key="canvasLocation" x="1582.608695652174" y="1526.7857142857142"/>
         </scene>
         <!--Home-->
         <scene sceneID="sai-o7-wyr">
