@@ -8,8 +8,13 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    
     // MARK: Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
+    
+    
+    
     
     
     // MARK: Lifecycle
@@ -20,7 +25,13 @@ class ProfileViewController: UIViewController {
     }
     
     
+    
+    
+    
     // MARK: Actions
+    
+    
+    
     
     
     // MARK: Helpers

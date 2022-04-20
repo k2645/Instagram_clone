@@ -88,8 +88,18 @@
 				5C8F23C0696D5EEE430A29E7 /* Pods-Catstagram.debug.xcconfig */,
 				EEC912FDF6C174AAAD663DC8 /* Pods-Catstagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A82F26E9280FE32900DA01BC /* Cell_story */ = {
+			isa = PBXGroup;
+			children = (
+				A85A0FF427FEAE3600FD3968 /* StoryTableViewCell.swift */,
+				A85A0FF527FEAE3600FD3968 /* StoryTableViewCell.xib */,
+				A85A0FF827FEB1DD00FD3968 /* StoryCollectionViewCell.swift */,
+				A85A0FF927FEB1DD00FD3968 /* StoryCollectionViewCell.xib */,
+			);
+			path = Cell_story;
 			sourceTree = "<group>";
 		};
 		A8AC9F6727E313190042F849 = {
@@ -162,23 +172,20 @@
 		A8EC3A8B27FC1B3B00E08BA4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A8EC3A8E27FC1DF500E08BA4 /* Cell_home */,
+				A82F26E9280FE32900DA01BC /* Cell_story */,
+				A8EC3A8E27FC1DF500E08BA4 /* Cell_feed */,
 				A8EC3A8C27FC1B6200E08BA4 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A8EC3A8E27FC1DF500E08BA4 /* Cell_home */ = {
+		A8EC3A8E27FC1DF500E08BA4 /* Cell_feed */ = {
 			isa = PBXGroup;
 			children = (
 				A88206CB27FC331600F68FCD /* FeedTableViewCell.swift */,
 				A88206CC27FC331600F68FCD /* FeedTableViewCell.xib */,
-				A85A0FF427FEAE3600FD3968 /* StoryTableViewCell.swift */,
-				A85A0FF527FEAE3600FD3968 /* StoryTableViewCell.xib */,
-				A85A0FF827FEB1DD00FD3968 /* StoryCollectionViewCell.swift */,
-				A85A0FF927FEB1DD00FD3968 /* StoryCollectionViewCell.xib */,
 			);
-			path = Cell_home;
+			path = Cell_feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
