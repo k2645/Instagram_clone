@@ -11,6 +11,9 @@
 		A82F26ED28166B6B00DA01BC /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F26EC28166B6B00DA01BC /* FeedAPIInput.swift */; };
 		A82F26EF28166BBC00DA01BC /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F26EE28166BBC00DA01BC /* FeedModel.swift */; };
 		A82F26F128166C0000DA01BC /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F26F028166C0000DA01BC /* FeedDataManager.swift */; };
+		A82F26F428168C1F00DA01BC /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F26F328168C1E00DA01BC /* FeedUploadInput.swift */; };
+		A82F26F628168C7D00DA01BC /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F26F528168C7D00DA01BC /* FeedUploadModel.swift */; };
+		A82F26F828168D1B00DA01BC /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F26F728168D1B00DA01BC /* FeedUploadDataManager.swift */; };
 		A841DFC427ED7E0F0046B4EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841DFC327ED7E0E0046B4EE /* LoginViewController.swift */; };
 		A841DFC627ED82080046B4EE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841DFC527ED82080046B4EE /* RegisterViewController.swift */; };
 		A841DFC827F172B10046B4EE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841DFC727F172B10046B4EE /* UIView+Extension.swift */; };
@@ -42,6 +45,9 @@
 		A82F26EC28166B6B00DA01BC /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
 		A82F26EE28166BBC00DA01BC /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 		A82F26F028166C0000DA01BC /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
+		A82F26F328168C1E00DA01BC /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		A82F26F528168C7D00DA01BC /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
+		A82F26F728168D1B00DA01BC /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
 		A841DFC327ED7E0E0046B4EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A841DFC527ED82080046B4EE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A841DFC727F172B10046B4EE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -118,6 +124,16 @@
 			path = FeedDataManager;
 			sourceTree = "<group>";
 		};
+		A82F26F228168BC200DA01BC /* FeedUploadDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A82F26F328168C1E00DA01BC /* FeedUploadInput.swift */,
+				A82F26F528168C7D00DA01BC /* FeedUploadModel.swift */,
+				A82F26F728168D1B00DA01BC /* FeedUploadDataManager.swift */,
+			);
+			path = FeedUploadDataManager;
+			sourceTree = "<group>";
+		};
 		A8AC9F6727E313190042F849 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +204,7 @@
 		A8EC3A8B27FC1B3B00E08BA4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A82F26F228168BC200DA01BC /* FeedUploadDataManager */,
 				A82F26EA28166B3200DA01BC /* FeedDataManager */,
 				A82F26E9280FE32900DA01BC /* Cell_story */,
 				A8EC3A8E27FC1DF500E08BA4 /* Cell_feed */,
@@ -330,11 +347,14 @@
 				A82F26ED28166B6B00DA01BC /* FeedAPIInput.swift in Sources */,
 				A85A0FFA27FEB1DD00FD3968 /* StoryCollectionViewCell.swift in Sources */,
 				A841DFC627ED82080046B4EE /* RegisterViewController.swift in Sources */,
+				A82F26F428168C1F00DA01BC /* FeedUploadInput.swift in Sources */,
 				A8EC3A8D27FC1B6200E08BA4 /* HomeViewController.swift in Sources */,
 				A8AC9F7427E313190042F849 /* AppDelegate.swift in Sources */,
 				A8D92FB52807C69900B4B410 /* ProfileViewController.swift in Sources */,
 				A841DFC827F172B10046B4EE /* UIView+Extension.swift in Sources */,
 				A8D92FB92807E82D00B4B410 /* ProfileCollectionViewCell.swift in Sources */,
+				A82F26F628168C7D00DA01BC /* FeedUploadModel.swift in Sources */,
+				A82F26F828168D1B00DA01BC /* FeedUploadDataManager.swift in Sources */,
 				A800F9DA27F18BD500A0FFCE /* UserInfo.swift in Sources */,
 				A82F26F128166C0000DA01BC /* FeedDataManager.swift in Sources */,
 				A88206CD27FC331600F68FCD /* FeedTableViewCell.swift in Sources */,

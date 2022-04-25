@@ -13,6 +13,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var arrayCat : [FeedModel] = []
     
+    // 카메라, 앨범의 viewController
+    let imagePickerViewController = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +30,15 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         let input = FeedAPIInput(limit: 10, page: 10)
         FeedDataManager().feedDataManager(input, self)
+        
+        imagePickerViewController.delegate = self
     }
+    
+    @IBAction func buttonGoAlbum(_ sender: Any) {
+        self.imagePickerViewController.sourceType = .photoLibrary
+        self.present(imagePickerViewController, animated: true, completion: nil)
+    }
+    
     
 }
 
@@ -96,5 +107,21 @@ extension HomeViewController {
     func sucessAPI(_ result : [FeedModel]) {
         arrayCat = result
         tableView.reloadData()
+    }
+}
+
+extension HomeViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    // image를 pick하는 것을 끝냈을 때 실행되는 method
+    // 이때 pick image는 (info : _ )
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            // firebase 와 연동해서 UI를 바꾼 후 image file을 서버로 연동하는 방식
+            // 아래 방식은 이미 firebase와 연동하여 image를 string 값으로 바꿔놨다는 것을 전제로 함.
+            let imageString = "https://firebasestorage.googleapis.com/v0/b/catstargram-d7fbf.appspot.com/o/Cat1?alt=media&token=e92d1af6-ceb3-4a0c-9ba9-acd5cf534a42"
+            let input = FeedUploadInput(content: "저희 곰먐미는 아니구요 남의 곰먐미입니다..", postImgsUrl: [imageString])
+            FeedUploadDataManager().posts(self, input)
+            
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }
