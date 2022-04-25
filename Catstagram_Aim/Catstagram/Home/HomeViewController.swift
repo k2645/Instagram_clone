@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
+    var arrayCat : [FeedModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,8 @@ class HomeViewController: UIViewController {
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
         
         // Do any additional setup after loading the view.
+        let input = FeedAPIInput(limit: 10, page: 10)
+        FeedDataManager().feedDataManager(input, self)
     }
     
 }
@@ -32,16 +35,25 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     // numberOfRowsInSection : 한 섹션에 몇 개의 cell을 넣을 것이냐
     // cellForRowAt : 어떠한 셀을 보여줄 것이냐
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arrayCat.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "StoryTableViewCell", for: indexPath) as? StoryTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "StoryTableViewCell", for: indexPath) as? StoryTableViewCell
+                else {
+                    return UITableViewCell()
+                }
             return cell
         } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell else { return UITableViewCell() }
-            cell.selectionStyle = .none
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell
+                else {
+                    return UITableViewCell()
+                }
+            if let urlString = arrayCat[indexPath.row - 1].url {
+                let url = URL(string: urlString)
+                cell.imageViewFeed.kf.setImage(with: url)
+            }
             return cell
         }
     }
@@ -80,3 +92,9 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
 }
 
+extension HomeViewController {
+    func sucessAPI(_ result : [FeedModel]) {
+        arrayCat = result
+        tableView.reloadData()
+    }
+}
