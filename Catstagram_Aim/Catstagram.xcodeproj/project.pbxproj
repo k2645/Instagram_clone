@@ -36,6 +36,8 @@
 		A8D92FBF280921AF00B4B410 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8D92FBD280921AF00B4B410 /* PostCollectionViewCell.xib */; };
 		A8EC3A8D27FC1B6200E08BA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC3A8C27FC1B6200E08BA4 /* HomeViewController.swift */; };
 		A8F6E1BE2816B2940053EBC5 /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1BD2816B2940053EBC5 /* FeedUploadInput.swift */; };
+		A8F6E1C12816B5AA0053EBC5 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C02816B5A90053EBC5 /* UserFeedModel.swift */; };
+		A8F6E1C32816BCEB0053EBC5 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C22816BCEB0053EBC5 /* UserFeedDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		A8D92FBD280921AF00B4B410 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		A8EC3A8C27FC1B6200E08BA4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/HomeViewController.swift; sourceTree = "<group>"; };
 		A8F6E1BD2816B2940053EBC5 /* FeedUploadInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		A8F6E1C02816B5A90053EBC5 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		A8F6E1C22816BCEB0053EBC5 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		EEC912FDF6C174AAAD663DC8 /* Pods-Catstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.release.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +126,7 @@
 				A82F26EE28166BBC00DA01BC /* FeedModel.swift */,
 				A82F26F028166C0000DA01BC /* FeedDataManager.swift */,
 			);
-			name = FeedDataManager;
-			path = Home/FeedDataManager;
+			path = FeedDataManager;
 			sourceTree = "<group>";
 		};
 		A82F26F228168BC200DA01BC /* FeedUploadDataManager */ = {
@@ -133,8 +136,7 @@
 				A82F26F528168C7D00DA01BC /* FeedUploadModel.swift */,
 				A82F26F728168D1B00DA01BC /* FeedUploadDataManager.swift */,
 			);
-			name = FeedUploadDataManager;
-			path = Home/FeedUploadDataManager;
+			path = FeedUploadDataManager;
 			sourceTree = "<group>";
 		};
 		A82F26F92816A98200DA01BC /* App */ = {
@@ -189,11 +191,11 @@
 				A82F26F92816A98200DA01BC /* App */,
 				A82F26FB2816A9DF00DA01BC /* UserInterface */,
 				A8AC9F7927E313190042F849 /* Main.storyboard */,
+				A8AC9F7E27E3131D0042F849 /* LaunchScreen.storyboard */,
 				A800F9D927F18BD500A0FFCE /* UserInfo.swift */,
 				A841DFC727F172B10046B4EE /* UIView+Extension.swift */,
 				A841DFC927F1746E0046B4EE /* UIViewController+Extension.swift */,
 				A8AC9F7C27E3131D0042F849 /* Assets.xcassets */,
-				A8AC9F7E27E3131D0042F849 /* LaunchScreen.storyboard */,
 				A8AC9F8127E3131D0042F849 /* Info.plist */,
 			);
 			path = Catstagram;
@@ -202,9 +204,10 @@
 		A8D92FB32807C65F00B4B410 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				A8D92FB42807C69900B4B410 /* ProfileViewController.swift */,
 				A8D92FBB2809219400B4B410 /* Cell_post */,
 				A8D92FB62807E7A000B4B410 /* Cell_profile */,
-				A8D92FB42807C69900B4B410 /* ProfileViewController.swift */,
+				A8F6E1BF2816B5850053EBC5 /* UserFeedDataManager */,
 			);
 			name = Profile;
 			path = Home;
@@ -231,11 +234,11 @@
 		A8EC3A8B27FC1B3B00E08BA4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A82F26F228168BC200DA01BC /* FeedUploadDataManager */,
-				A82F26EA28166B3200DA01BC /* FeedDataManager */,
+				A8EC3A8C27FC1B6200E08BA4 /* HomeViewController.swift */,
 				A82F26E9280FE32900DA01BC /* Cell_story */,
 				A8EC3A8E27FC1DF500E08BA4 /* Cell_feed */,
-				A8EC3A8C27FC1B6200E08BA4 /* HomeViewController.swift */,
+				A82F26F228168BC200DA01BC /* FeedUploadDataManager */,
+				A82F26EA28166B3200DA01BC /* FeedDataManager */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -248,6 +251,15 @@
 			);
 			name = Cell_feed;
 			path = Home/Cell_feed;
+			sourceTree = "<group>";
+		};
+		A8F6E1BF2816B5850053EBC5 /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A8F6E1C02816B5A90053EBC5 /* UserFeedModel.swift */,
+				A8F6E1C22816BCEB0053EBC5 /* UserFeedDataManager.swift */,
+			);
+			path = UserFeedDataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +390,7 @@
 				A8EC3A8D27FC1B6200E08BA4 /* HomeViewController.swift in Sources */,
 				A8AC9F7427E313190042F849 /* AppDelegate.swift in Sources */,
 				A8D92FB52807C69900B4B410 /* ProfileViewController.swift in Sources */,
+				A8F6E1C32816BCEB0053EBC5 /* UserFeedDataManager.swift in Sources */,
 				A841DFC827F172B10046B4EE /* UIView+Extension.swift in Sources */,
 				A8F6E1BE2816B2940053EBC5 /* FeedUploadInput.swift in Sources */,
 				A8D92FB92807E82D00B4B410 /* ProfileCollectionViewCell.swift in Sources */,
@@ -388,6 +401,7 @@
 				A88206CD27FC331600F68FCD /* FeedTableViewCell.swift in Sources */,
 				A8AC9F7627E313190042F849 /* SceneDelegate.swift in Sources */,
 				A8D92FBE280921AF00B4B410 /* PostCollectionViewCell.swift in Sources */,
+				A8F6E1C12816B5AA0053EBC5 /* UserFeedModel.swift in Sources */,
 				A85A0FF627FEAE3600FD3968 /* StoryTableViewCell.swift in Sources */,
 				A82F26EF28166BBC00DA01BC /* FeedModel.swift in Sources */,
 			);
