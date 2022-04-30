@@ -18,6 +18,8 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
         didSet { self.profileCollectionView.reloadData() }
     }
     
+    var deletedIndex: Int?
+    
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,7 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     // MARK: Actions
+    // long press gesture를 추가하기 위한 함수 작성
     @objc
     func didLongPressCell(gestureRecognizer: UILongPressGestureRecognizer) {
         if gestureRecognizer.state != .began { return }
@@ -34,6 +37,15 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if let indexPath = profileCollectionView?.indexPathForItem(at: position) {
             print("DEBUG : ", indexPath.item)
+            
+            guard let userPosts = self.userPosts else { return }
+            let cellData = userPosts[indexPath.item]
+            self.deletedIndex = indexPath.item
+            if let postIdx = cellData.postIdx {
+                // 삭제 API를 호출
+                UserFeedDataManager().deleteUserFeed(self, postIdx)
+            }
+            
         }
     }
     
@@ -56,6 +68,7 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
                   bundle: nil),
             forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
         
+        // 길게 눌렀을 때 반응하는 gesture 추가
         let gesture = UILongPressGestureRecognizer(
             target: self,
             action: #selector(didLongPressCell(gestureRecognizer:)))
@@ -168,7 +181,14 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
 // MARK: -API 통신 메소드
 extension ProfileViewController {
     func sucessAPI(_ result: UserFeedModel) {
-        
         self.userPosts = result.result?.getUserPosts
+    }
+    
+    func succeddDeletePostAPI(_ isSuccess: Bool) {
+        guard isSuccess else { return }
+        
+        if let deletedIndex = self.deletedIndex {
+            self.userPosts?.remove(at: deletedIndex)
+        }
     }
 }

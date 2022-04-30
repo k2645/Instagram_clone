@@ -38,6 +38,7 @@
 		A8F6E1BE2816B2940053EBC5 /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1BD2816B2940053EBC5 /* FeedUploadInput.swift */; };
 		A8F6E1C12816B5AA0053EBC5 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C02816B5A90053EBC5 /* UserFeedModel.swift */; };
 		A8F6E1C32816BCEB0053EBC5 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C22816BCEB0053EBC5 /* UserFeedDataManager.swift */; };
+		A8F6E1C7281CB5BC0053EBC5 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C6281CB5BC0053EBC5 /* DeleteUserFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		A8F6E1BD2816B2940053EBC5 /* FeedUploadInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
 		A8F6E1C02816B5A90053EBC5 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		A8F6E1C22816BCEB0053EBC5 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
+		A8F6E1C6281CB5BC0053EBC5 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
 		EEC912FDF6C174AAAD663DC8 /* Pods-Catstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.release.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,10 +258,27 @@
 		A8F6E1BF2816B5850053EBC5 /* UserFeedDataManager */ = {
 			isa = PBXGroup;
 			children = (
-				A8F6E1C02816B5A90053EBC5 /* UserFeedModel.swift */,
 				A8F6E1C22816BCEB0053EBC5 /* UserFeedDataManager.swift */,
+				A8F6E1C5281CB5910053EBC5 /* UserFeed */,
+				A8F6E1C4281CB5780053EBC5 /* DeleteUserFeed */,
 			);
 			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
+		A8F6E1C4281CB5780053EBC5 /* DeleteUserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				A8F6E1C6281CB5BC0053EBC5 /* DeleteUserFeed.swift */,
+			);
+			path = DeleteUserFeed;
+			sourceTree = "<group>";
+		};
+		A8F6E1C5281CB5910053EBC5 /* UserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				A8F6E1C02816B5A90053EBC5 /* UserFeedModel.swift */,
+			);
+			path = UserFeed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +405,7 @@
 				A841DFC427ED7E0F0046B4EE /* LoginViewController.swift in Sources */,
 				A82F26ED28166B6B00DA01BC /* FeedAPIInput.swift in Sources */,
 				A85A0FFA27FEB1DD00FD3968 /* StoryCollectionViewCell.swift in Sources */,
+				A8F6E1C7281CB5BC0053EBC5 /* DeleteUserFeed.swift in Sources */,
 				A841DFC627ED82080046B4EE /* RegisterViewController.swift in Sources */,
 				A8EC3A8D27FC1B6200E08BA4 /* HomeViewController.swift in Sources */,
 				A8AC9F7427E313190042F849 /* AppDelegate.swift in Sources */,
