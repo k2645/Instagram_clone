@@ -39,6 +39,9 @@
 		A8F6E1C12816B5AA0053EBC5 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C02816B5A90053EBC5 /* UserFeedModel.swift */; };
 		A8F6E1C32816BCEB0053EBC5 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C22816BCEB0053EBC5 /* UserFeedDataManager.swift */; };
 		A8F6E1C7281CB5BC0053EBC5 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C6281CB5BC0053EBC5 /* DeleteUserFeed.swift */; };
+		A8F6E1C9282E7E4E0053EBC5 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C8282E7E4E0053EBC5 /* ReelsViewController.swift */; };
+		A8F6E1D1282E8A210053EBC5 /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1D0282E8A210053EBC5 /* ReelsCell.swift */; };
+		A8F6E1D3282E8C4A0053EBC5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1D2282E8C4A0053EBC5 /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,11 @@
 		A8F6E1C02816B5A90053EBC5 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		A8F6E1C22816BCEB0053EBC5 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		A8F6E1C6281CB5BC0053EBC5 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
+		A8F6E1C8282E7E4E0053EBC5 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		A8F6E1D0282E8A210053EBC5 /* ReelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCell.swift; sourceTree = "<group>"; };
+		A8F6E1D2282E8C4A0053EBC5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		A8F6E1D4282EA7AF0053EBC5 /* bunny01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny01.mp4; path = ../../../Downloads/bunny01.mp4; sourceTree = "<group>"; };
+		A8F6E1D5282EA7AF0053EBC5 /* bunny02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny02.mp4; path = ../../../Downloads/bunny02.mp4; sourceTree = "<group>"; };
 		EEC912FDF6C174AAAD663DC8 /* Pods-Catstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.release.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,12 +201,17 @@
 				A82F26F92816A98200DA01BC /* App */,
 				A82F26FB2816A9DF00DA01BC /* UserInterface */,
 				A8AC9F7927E313190042F849 /* Main.storyboard */,
+				A8F6E1C8282E7E4E0053EBC5 /* ReelsViewController.swift */,
+				A8F6E1D0282E8A210053EBC5 /* ReelsCell.swift */,
+				A8F6E1D2282E8C4A0053EBC5 /* VideoPlayerView.swift */,
 				A8AC9F7E27E3131D0042F849 /* LaunchScreen.storyboard */,
 				A800F9D927F18BD500A0FFCE /* UserInfo.swift */,
 				A841DFC727F172B10046B4EE /* UIView+Extension.swift */,
 				A841DFC927F1746E0046B4EE /* UIViewController+Extension.swift */,
 				A8AC9F7C27E3131D0042F849 /* Assets.xcassets */,
 				A8AC9F8127E3131D0042F849 /* Info.plist */,
+				A8F6E1D4282EA7AF0053EBC5 /* bunny01.mp4 */,
+				A8F6E1D5282EA7AF0053EBC5 /* bunny02.mp4 */,
 			);
 			path = Catstagram;
 			sourceTree = "<group>";
@@ -401,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F6E1D1282E8A210053EBC5 /* ReelsCell.swift in Sources */,
 				A841DFCA27F1746E0046B4EE /* UIViewController+Extension.swift in Sources */,
 				A841DFC427ED7E0F0046B4EE /* LoginViewController.swift in Sources */,
 				A82F26ED28166B6B00DA01BC /* FeedAPIInput.swift in Sources */,
@@ -411,6 +425,7 @@
 				A8AC9F7427E313190042F849 /* AppDelegate.swift in Sources */,
 				A8D92FB52807C69900B4B410 /* ProfileViewController.swift in Sources */,
 				A8F6E1C32816BCEB0053EBC5 /* UserFeedDataManager.swift in Sources */,
+				A8F6E1D3282E8C4A0053EBC5 /* VideoPlayerView.swift in Sources */,
 				A841DFC827F172B10046B4EE /* UIView+Extension.swift in Sources */,
 				A8F6E1BE2816B2940053EBC5 /* FeedUploadInput.swift in Sources */,
 				A8D92FB92807E82D00B4B410 /* ProfileCollectionViewCell.swift in Sources */,
@@ -423,6 +438,7 @@
 				A8D92FBE280921AF00B4B410 /* PostCollectionViewCell.swift in Sources */,
 				A8F6E1C12816B5AA0053EBC5 /* UserFeedModel.swift in Sources */,
 				A85A0FF627FEAE3600FD3968 /* StoryTableViewCell.swift in Sources */,
+				A8F6E1C9282E7E4E0053EBC5 /* ReelsViewController.swift in Sources */,
 				A82F26EF28166BBC00DA01BC /* FeedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
