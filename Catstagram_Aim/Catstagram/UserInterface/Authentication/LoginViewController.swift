@@ -50,9 +50,18 @@ class LoginViewController: UIViewController {
         // 로그인이 되어야 한다.
         guard let userInfo = userInfo else { return } //guard라는 state를 사용하여 옵셔널 추출
         if userInfo.email == self.email && userInfo.password == self.password {
+            // 화면전환
+            
+            // -> 화면이 남아있음
+            //let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
+            //vc.modalPresentationStyle = .fullScreen
+            //self.present(vc, animated: true, completion: nil)
+            
             let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true, completion: nil)
+            
+            // 이전의 화면은 사라지고 위의 화면이 대체되게 됨
+            self.view.window?.windowScene?.keyWindow?.rootViewController = vc
+            
         } else {
             
         }

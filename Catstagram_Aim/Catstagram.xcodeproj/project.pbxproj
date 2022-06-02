@@ -42,6 +42,8 @@
 		A8F6E1C9282E7E4E0053EBC5 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1C8282E7E4E0053EBC5 /* ReelsViewController.swift */; };
 		A8F6E1D1282E8A210053EBC5 /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1D0282E8A210053EBC5 /* ReelsCell.swift */; };
 		A8F6E1D3282E8C4A0053EBC5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6E1D2282E8C4A0053EBC5 /* VideoPlayerView.swift */; };
+		A8F6E1D628322CDC0053EBC5 /* bunny01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A8F6E1D4282EA7AF0053EBC5 /* bunny01.mp4 */; };
+		A8F6E1D728322CDC0053EBC5 /* bunny02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A8F6E1D5282EA7AF0053EBC5 /* bunny02.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,8 +85,8 @@
 		A8F6E1C8282E7E4E0053EBC5 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
 		A8F6E1D0282E8A210053EBC5 /* ReelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCell.swift; sourceTree = "<group>"; };
 		A8F6E1D2282E8C4A0053EBC5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
-		A8F6E1D4282EA7AF0053EBC5 /* bunny01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny01.mp4; path = ../../../Downloads/bunny01.mp4; sourceTree = "<group>"; };
-		A8F6E1D5282EA7AF0053EBC5 /* bunny02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny02.mp4; path = ../../../Downloads/bunny02.mp4; sourceTree = "<group>"; };
+		A8F6E1D4282EA7AF0053EBC5 /* bunny01.mp4 */ = {isa = PBXFileReference; explicitFileType = video.mpeg; name = bunny01.mp4; path = "/Users/kim-yeonghyeon/Catstagram-clone/Catstagram_Aim/Catstagram/bunny01.mp4"; sourceTree = "<absolute>"; };
+		A8F6E1D5282EA7AF0053EBC5 /* bunny02.mp4 */ = {isa = PBXFileReference; explicitFileType = video.mpeg; name = bunny02.mp4; path = "/Users/kim-yeonghyeon/Catstagram-clone/Catstagram_Aim/Catstagram/bunny02.mp4"; sourceTree = "<absolute>"; };
 		EEC912FDF6C174AAAD663DC8 /* Pods-Catstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.release.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -354,6 +356,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F6E1D628322CDC0053EBC5 /* bunny01.mp4 in Resources */,
+				A8F6E1D728322CDC0053EBC5 /* bunny02.mp4 in Resources */,
 				A8D92FBF280921AF00B4B410 /* PostCollectionViewCell.xib in Resources */,
 				A8AC9F8027E3131D0042F849 /* LaunchScreen.storyboard in Resources */,
 				A88206CE27FC331600F68FCD /* FeedTableViewCell.xib in Resources */,

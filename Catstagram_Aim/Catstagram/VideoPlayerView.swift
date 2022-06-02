@@ -16,7 +16,7 @@ class VideoPlayerView: UIView {
     var playerLooper: AVPlayerLooper?
     // 먼저 들어온 영상을 먼저 실행하고 나중에 들어온 영상을 나중에 실행시키는 순서에 관한 객체
     var queuePlayer: AVQueuePlayer?
-    var urlStr: String?
+    var urlStr: String
     
     init(frame: CGRect, urlStr: String) {
         self.urlStr = urlStr

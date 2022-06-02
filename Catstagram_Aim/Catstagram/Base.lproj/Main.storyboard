@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zx2-2t-8Wh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v4p-12-uDg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -26,7 +27,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7qp-r1-3R4">
                                 <rect key="frame" x="10" y="431" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="passwordTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Khy-rE-Lxk"/>
                                 </connections>
@@ -503,7 +504,7 @@
             </objects>
             <point key="canvasLocation" x="214" y="53"/>
         </scene>
-        <!--릴스-->
+        <!--Reels-->
         <scene sceneID="fOK-jH-LHV">
             <objects>
                 <viewController storyboardIdentifier="ReelsVC" id="7ut-4g-CMt" customClass="ReelsViewController" customModule="Catstagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -532,7 +533,11 @@
                             <constraint firstItem="fVN-AE-6xc" firstAttribute="bottom" secondItem="u9U-yN-qhC" secondAttribute="bottom" id="nYJ-RU-359"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="릴스" id="kAm-wG-u7k"/>
+                    <tabBarItem key="tabBarItem" title="Reels" image="video.circle" catalog="system" id="kAm-wG-u7k">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="selectedImage" image="video.circle" catalog="system" symbolScale="default"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="collectionView" destination="u9U-yN-qhC" id="aBC-fb-52M"/>
                     </connections>
@@ -572,6 +577,7 @@
         <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="video.circle" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
